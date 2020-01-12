@@ -20,4 +20,5 @@ def reduce(source_array, sp=nil)
       accum = yield(accum, source_array[i])
       i+=1
     end
+    accum
 end
