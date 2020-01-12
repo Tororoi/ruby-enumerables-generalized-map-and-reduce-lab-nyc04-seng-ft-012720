@@ -5,5 +5,5 @@ def map(source_array)
     neg.push(yield(source_array[i]))
     i += 1
   end
-  return new
+  new
 end
