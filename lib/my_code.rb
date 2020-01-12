@@ -1,14 +1,15 @@
 def map(source_array)
-  mod = [-1,1,2,*2]
-  imod = 0
-  new = []
+  neg = []
+  ori = []
+  two = []
+  exp = []
   i = 0
-while imod < mod.length do
   while i < source_array.length do
-    new.push(source_array[i]*mod[imod])
+    neg.push(source_array[i]*-1)
+    neg.push(source_array[i])
+    neg.push(source_array[i]*2)
+    neg.push(source_array[i]**2)
     i += 1
   end
-  imod +=1
-end
-  return new
+  return neg, ori, two, exp
 end
